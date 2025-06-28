@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"0ac069ccc7279283","type":"text","text":"# CONTROL","x":-100,"y":-380,"width":250,"height":60},
+		{"id":"09fd287c1b5dad83","type":"text","text":"### ACTIVE CONTROL","x":76,"y":-203,"width":324,"height":83},
+		{"id":"c3edc8823c3d2461","type":"text","text":"### PASSIVE CONTROL","x":-335,"y":-201,"width":286,"height":81},
+		{"id":"fc7bef0da44f3fbd","type":"text","text":" #### OPEN LOOP\n \n eg. balancing an inverted pendulum by doing a up and down motion","x":-49,"y":0,"width":250,"height":200},
+		{"id":"dc5f1a3e34d1b7b6","type":"text","text":"#### [[CLOSED LOOP FEEDBACK]]","x":360,"y":0,"width":250,"height":60},
+		{"id":"85c18deb9d8ecdbc","x":535,"y":240,"width":150,"height":60,"type":"text","text":"CONTROL"},
+		{"id":"f8aecfedc11cc453","x":542,"y":140,"width":137,"height":60,"type":"text","text":"SYSTEM"},
+		{"id":"9a11ca4f2e6e7a69","x":360,"y":140,"width":137,"height":60,"type":"text","text":"INPUT u"},
+		{"id":"4ce5038bf6d405a1","x":720,"y":140,"width":147,"height":60,"type":"text","text":"OUTPUT y"}
+	],
+	"edges":[
+		{"id":"3e793d2fe611233f","fromNode":"0ac069ccc7279283","fromSide":"bottom","toNode":"09fd287c1b5dad83","toSide":"top"},
+		{"id":"713c0c7df7249597","fromNode":"0ac069ccc7279283","fromSide":"bottom","toNode":"c3edc8823c3d2461","toSide":"top"},
+		{"id":"50f03991f103eb18","fromNode":"09fd287c1b5dad83","fromSide":"bottom","toNode":"fc7bef0da44f3fbd","toSide":"top"},
+		{"id":"e39e3d09ff32f381","fromNode":"09fd287c1b5dad83","fromSide":"bottom","toNode":"dc5f1a3e34d1b7b6","toSide":"top"},
+		{"id":"0cfdf4d2a7e8f08e","fromNode":"9a11ca4f2e6e7a69","fromSide":"right","toNode":"f8aecfedc11cc453","toSide":"left"},
+		{"id":"6408cb13bb5e76a8","fromNode":"f8aecfedc11cc453","fromSide":"right","toNode":"4ce5038bf6d405a1","toSide":"left"},
+		{"id":"ebd0636c6dcea72f","fromNode":"4ce5038bf6d405a1","fromSide":"bottom","toNode":"85c18deb9d8ecdbc","toSide":"right"},
+		{"id":"f18a2bc369aa859b","fromNode":"85c18deb9d8ecdbc","fromSide":"left","toNode":"9a11ca4f2e6e7a69","toSide":"bottom"}
+	]
+}
