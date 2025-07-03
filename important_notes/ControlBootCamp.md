@@ -40,7 +40,10 @@ x=Tz, where z is a state vector in the eigen coordinate system, easier to calcul
 				  Tz'=ATz
 				  z'=T-1ATz
 				  z'=Dz
-Putting A=TD$T^{-1}$ in expansion of $e^{At}$ = I+At+$(At)^2$ /2!+...
+Putting
+				A=TD$T^{-1}$ 
+in expansion of 
+				 $e^{At}$ = I+At+$(At)^2$ /2!+...
 We get after simplifying
 				 $e^{At}$=T$e^{Dt}$$T^{-1}$
 which is much easier to calculate.
