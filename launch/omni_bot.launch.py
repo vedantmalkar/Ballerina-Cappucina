@@ -38,5 +38,12 @@ def generate_launch_description():
             executable='joint_state_publisher_gui',
             output='screen'
         ),
+                # Launch RViz2
+        Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            output='screen'
+        ),
     ])
 
