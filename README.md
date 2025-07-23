@@ -43,7 +43,11 @@ ros2 launch gz_rosa_control omni_bot.launch.py
 source ~/ros_ws/install/setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r cmd_vel:=/omni_bot/cmd_vel
 ```
-6. Image processing node
+6. Image processing node (select colour - blue,yellow,green)
 ```
-ros2 run ball_tracker detect_ball --ros-args -p tuning_mode:=true -r image_in:=camera/image_raw
+ros2 launch ball_tracker detect_ball_launch.py color:=yellow
+```
+7. Start bot movement
+```
+ros2 run ball_tracker move_bot
 ```
