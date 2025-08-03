@@ -1,4 +1,6 @@
 <launch>
+    <node name="webcam_publisher" pkg="ball_tracking" type="webcam_publisher.py" output="screen" />
+    
     <group ns="detect_ball">
         <node name="detect_ball" pkg="ball_tracker" type="detect_ball_ros1.py" output="screen">
             <param name="tuning_mode" value="false" />
@@ -14,7 +16,7 @@
             <param name="y_max" value="80" />
             <param name="sz_min" value="1" />
             <param name="sz_max" value="30" />
-            <remap from="/image_in" to="/camera/image_raw" />
+
         </node>
     </group>
 
