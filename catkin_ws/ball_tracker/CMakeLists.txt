@@ -14,6 +14,7 @@ catkin_package()
 catkin_install_python(PROGRAMS
   scripts/detect_ball_ros1.py
   scripts/move_bot_ros1.py
+  scripts/webcam_publisher.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
