@@ -4,7 +4,7 @@ import rospy
 from geometry_msgs.msg import Point
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
-import process_image as proc  # No changes needed here
+import src.process_image as proc  
 
 class BallDetectorNode:
     def __init__(self):
