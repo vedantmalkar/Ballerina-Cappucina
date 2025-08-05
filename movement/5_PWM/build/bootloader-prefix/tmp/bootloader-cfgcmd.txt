@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DSDKCONFIG=/home/bhakti/Wall-E/5_PWM/sdkconfig;-DIDF_PATH=/home/bhakti/esp/esp-idf;-DIDF_TARGET=esp32;-DPYTHON_DEPS_CHECKED=1;-DPYTHON=/home/bhakti/.espressif/python_env/idf5.1_py3.10_env/bin/python;-DEXTRA_COMPONENT_DIRS=/home/bhakti/esp/esp-idf/components/bootloader;-DPROJECT_SOURCE_DIR=/home/bhakti/Wall-E/5_PWM;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'
