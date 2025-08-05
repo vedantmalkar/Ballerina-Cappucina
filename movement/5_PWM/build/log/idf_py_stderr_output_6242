@@ -1,7 +1,0 @@
-[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
-[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
-[0;33m--- 0x40080400: _init at ??:?
-[0m
-[0;33m--- 0x4008111c: call_start_cpu1 at /home/bhakti/esp/esp-idf/components/esp_system/port/cpu_start.c:160
-[0m
-[0m
