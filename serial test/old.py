@@ -12,9 +12,9 @@ try:
 
     try:
         while(True):
-            ser.write(b"0.4,0.3")
+            ser.write(b"0.4,0.3\n")
 
-            print("The Letter 'A' has been sent!")
+            print("Float values have been sent!")
             time.sleep(1)
 
     except serial.SerialException:
