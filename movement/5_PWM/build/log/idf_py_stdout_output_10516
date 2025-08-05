@@ -1,0 +1,55 @@
+-- IDF_TARGET not set, using default target: esp32
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/bhakti/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/bhakti/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/bhakti/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/bhakti/Wall-E/5_PWM/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/bhakti/.espressif/python_env/idf5.1_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - no
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Could NOT find Threads (missing: Threads_FOUND) 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "pwm_test" version: v2.2-77-g7e918cd-dirty
+-- Adding linker script /home/bhakti/Wall-E/5_PWM/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/bhakti/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/bhakti/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/bhakti/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/bhakti/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/bhakti/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/bhakti/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/bhakti/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/bhakti/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs sra-board-component tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/bhakti/esp/esp-idf/components/app_trace /home/bhakti/esp/esp-idf/components/app_update /home/bhakti/esp/esp-idf/components/bootloader /home/bhakti/esp/esp-idf/components/bootloader_support /home/bhakti/esp/esp-idf/components/bt /home/bhakti/esp/esp-idf/components/cmock /home/bhakti/esp/esp-idf/components/console /home/bhakti/esp/esp-idf/components/cxx /home/bhakti/esp/esp-idf/components/driver /home/bhakti/esp/esp-idf/components/efuse /home/bhakti/esp/esp-idf/components/esp-tls /home/bhakti/esp/esp-idf/components/esp_adc /home/bhakti/esp/esp-idf/components/esp_app_format /home/bhakti/esp/esp-idf/components/esp_coex /home/bhakti/esp/esp-idf/components/esp_common /home/bhakti/esp/esp-idf/components/esp_eth /home/bhakti/esp/esp-idf/components/esp_event /home/bhakti/esp/esp-idf/components/esp_gdbstub /home/bhakti/esp/esp-idf/components/esp_hid /home/bhakti/esp/esp-idf/components/esp_http_client /home/bhakti/esp/esp-idf/components/esp_http_server /home/bhakti/esp/esp-idf/components/esp_https_ota /home/bhakti/esp/esp-idf/components/esp_https_server /home/bhakti/esp/esp-idf/components/esp_hw_support /home/bhakti/esp/esp-idf/components/esp_lcd /home/bhakti/esp/esp-idf/components/esp_local_ctrl /home/bhakti/esp/esp-idf/components/esp_mm /home/bhakti/esp/esp-idf/components/esp_netif /home/bhakti/esp/esp-idf/components/esp_netif_stack /home/bhakti/esp/esp-idf/components/esp_partition /home/bhakti/esp/esp-idf/components/esp_phy /home/bhakti/esp/esp-idf/components/esp_pm /home/bhakti/esp/esp-idf/components/esp_psram /home/bhakti/esp/esp-idf/components/esp_ringbuf /home/bhakti/esp/esp-idf/components/esp_rom /home/bhakti/esp/esp-idf/components/esp_system /home/bhakti/esp/esp-idf/components/esp_timer /home/bhakti/esp/esp-idf/components/esp_wifi /home/bhakti/esp/esp-idf/components/espcoredump /home/bhakti/esp/esp-idf/components/esptool_py /home/bhakti/esp/esp-idf/components/fatfs /home/bhakti/esp/esp-idf/components/freertos /home/bhakti/esp/esp-idf/components/hal /home/bhakti/esp/esp-idf/components/heap /home/bhakti/esp/esp-idf/components/http_parser /home/bhakti/esp/esp-idf/components/idf_test /home/bhakti/esp/esp-idf/components/ieee802154 /home/bhakti/esp/esp-idf/components/json /home/bhakti/esp/esp-idf/components/log /home/bhakti/esp/esp-idf/components/lwip /home/bhakti/Wall-E/5_PWM/main /home/bhakti/esp/esp-idf/components/mbedtls /home/bhakti/esp/esp-idf/components/mqtt /home/bhakti/esp/esp-idf/components/newlib /home/bhakti/esp/esp-idf/components/nvs_flash /home/bhakti/esp/esp-idf/components/openthread /home/bhakti/esp/esp-idf/components/partition_table /home/bhakti/esp/esp-idf/components/perfmon /home/bhakti/esp/esp-idf/components/protobuf-c /home/bhakti/esp/esp-idf/components/protocomm /home/bhakti/esp/esp-idf/components/pthread /home/bhakti/esp/esp-idf/components/sdmmc /home/bhakti/esp/esp-idf/components/soc /home/bhakti/esp/esp-idf/components/spi_flash /home/bhakti/esp/esp-idf/components/spiffs /home/bhakti/Wall-E/components/sra-board-component /home/bhakti/esp/esp-idf/components/tcp_transport /home/bhakti/esp/esp-idf/components/ulp /home/bhakti/esp/esp-idf/components/unity /home/bhakti/esp/esp-idf/components/usb /home/bhakti/esp/esp-idf/components/vfs /home/bhakti/esp/esp-idf/components/wear_levelling /home/bhakti/esp/esp-idf/components/wifi_provisioning /home/bhakti/esp/esp-idf/components/wpa_supplicant /home/bhakti/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bhakti/Wall-E/5_PWM/build
