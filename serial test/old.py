@@ -12,7 +12,7 @@ try:
 
     try:
         while(True):
-            ser.write(b"A")
+            ser.write(b"0.4,0.3")
 
             print("The Letter 'A' has been sent!")
             time.sleep(1)
