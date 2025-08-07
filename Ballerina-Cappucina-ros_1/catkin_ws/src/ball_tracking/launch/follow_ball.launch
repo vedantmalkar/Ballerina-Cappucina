@@ -1,0 +1,24 @@
+<launch>
+    <node name="webcam_publisher" pkg="ball_tracking" type="webcam_publisher.py" output="screen" />
+    
+    <group ns="detect_ball">
+        <node name="detect_ball" pkg="ball_tracking" type="detect_ball_ros1.py" output="screen">
+            <param name="tuning_mode" value="false" />
+            <param name="h_min" value="39" />
+            <param name="h_max" value="80" />
+            <param name="s_min" value="23" />
+            <param name="s_max" value="255" />
+            <param name="v_min" value="0" />
+            <param name="v_max" value="255" />
+            <param name="x_min" value="0" />
+            <param name="x_max" value="100" />
+            <param name="y_min" value="42" />
+            <param name="y_max" value="100" />
+            <param name="sz_min" value="1" />
+            <param name="sz_max" value="30" />
+
+        </node>
+    </group>
+
+    <node name="move_bot" pkg="ball_tracking" type="move_bot_ros1.py" output="screen" />
+</launch>

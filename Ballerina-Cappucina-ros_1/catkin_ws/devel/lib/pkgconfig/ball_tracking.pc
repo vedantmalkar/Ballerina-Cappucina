@@ -1,0 +1,8 @@
+prefix=/home/balli/Desktop/Ballerina-Cappucina-ros_1/catkin_ws/devel
+
+Name: ball_tracking
+Description: Description of ball_tracking
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
