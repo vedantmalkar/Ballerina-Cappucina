@@ -12,22 +12,19 @@ class MovementNode:
         rospy.init_node("move_bot")
         rospy.loginfo("Movement has been initialised")
 
-        # Initialize serial port inside the class and handle errors gracefully
         try:
             self.ser = serial.Serial(
                 port="/dev/ttyTHS1",
                 baudrate=115200,
                 timeout=1
             )
-            time.sleep(2)  # Wait for the serial port to be ready
+            time.sleep(2)
             rospy.loginfo("Serial port connected on %s", self.ser.port)
         except serial.SerialException as e:
             rospy.logfatal("Failed to connect to serial port: %s", e)
             sys.exit(1)
 
         self.point_sub = rospy.Subscriber("/detected_ball", Point, self.movement_callback)
-        # The ROS publisher is no longer needed, as we are using serial.
-        # self.cmd_pub = rospy.Publisher("/omni_bot/cmd_vel", Twist, queue_size=1)
 
         self.ball_detected = False
         self.timer = rospy.Timer(rospy.Duration(0.2), self.timer_callback)
@@ -41,8 +38,7 @@ class MovementNode:
         
         linear_x = 0.0
         angular_z = 0.0
-        
-        # Determine the movement command based on ball position
+
         if -0.3 < pos_x < 0.3:
             linear_x = 0.5
             angular_z = 0.0
@@ -52,13 +48,11 @@ class MovementNode:
             angular_z = -0.1
             rospy.loginfo("Rotating")
 
-        # If ball is close, stop movement
         if pos_z >= 0.065:
             linear_x = 0.0
             angular_z = 0.0
             rospy.loginfo("Ball close - stopped")
 
-        # Send the final calculated command via serial
         data_to_send = "%f %f\n" % (linear_x, angular_z)
         try:
             self.ser.write(data_to_send.encode("utf-8"))
@@ -70,7 +64,6 @@ class MovementNode:
         if not self.ball_detected:
             rospy.loginfo("Started rotation - no ball detected")
             
-            # Send a command to rotate when no ball is detected
             linear_x = 0.0
             angular_z = -0.5
             
