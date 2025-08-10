@@ -1,35 +1,34 @@
-import serial
 import time
+import serial
 
-UART_PORT = "/dev/ttyTHS1"
-BAUD_RATE = 115200
-
-# Try to open serial port
 try:
-    ser = serial.Serial(UART_PORT, BAUD_RATE, timeout=1)
-    print("Connected to {} at {} baud.".format(UART_PORT, BAUD_RATE))
-except serial.SerialException as e:
-    print("Error opening serial port {}: {}".format(UART_PORT, e))
-    exit(1)
+    # Open serial port
+    ser = serial.Serial(
+        port="/dev/ttyUSB0",
+        baudrate=115200,
+        timeout=1
+    )
 
-# Function to send pattern number
-def send_pattern(pattern_num):
-    if 1 <= pattern_num <= 5:
-        cmd = "{}\n".format(pattern_num)
-        ser.write(cmd.encode())
-        print("Sent pattern: {}".format(pattern_num))
-    else:
-        print("Invalid pattern number. Use 1-5.")
+    time.sleep(2)  # Allow serial connection to initialize
 
-# Main loop
-if __name__ == "__main__":
     try:
         while True:
-            # Cycle through patterns 1–5
-            for p in range(1, 6):
-                send_pattern(p)
-                time.sleep(5)  # Wait between commands
+            for pattern in range(1, 6):  # Loop through patterns 1 to 5
+                cmd = "{}\n".format(pattern)  # Pattern number with newline
+                ser.write(cmd.encode())       # Send as bytes
+                print("Sent pattern:", pattern)
+
+                # Wait long enough for the ESP32 pattern to finish
+                time.sleep(6)  # 3s run + 1s stop + extra buffer
+
+    except serial.SerialException:
+        print("Port is not connected.")
+
     except KeyboardInterrupt:
-        print("\nStopping sender.")
+        print("STOPPED by user.")
+
+finally:
+    if 'ser' in locals() and ser.is_open:
         ser.close()
+        print("Communication closed.")
 
