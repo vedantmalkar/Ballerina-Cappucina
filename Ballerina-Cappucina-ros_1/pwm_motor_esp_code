@@ -1,0 +1,199 @@
+#include "driver/uart.h"
+#include "driver/gpio.h"
+#include "driver/ledc.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "esp_timer.h"
+
+#define TXD_PIN GPIO_NUM_17
+#define RXD_PIN GPIO_NUM_16
+#define UART_NUM UART_NUM_2
+#define BUF_SIZE 1024
+
+float linear_x_val = 0.0;
+float angular_z_val = 0.0;
+
+#define MOTOR_PWM_FRONT_LEFT  GPIO_NUM_18
+#define MOTOR_PWM_FRONT_RIGHT GPIO_NUM_19
+#define MOTOR_PWM_REAR_LEFT   GPIO_NUM_21
+#define MOTOR_PWM_REAR_RIGHT  GPIO_NUM_22
+
+#define MOTOR_DIR_FRONT_LEFT  GPIO_NUM_25
+#define MOTOR_DIR_FRONT_RIGHT GPIO_NUM_26
+#define MOTOR_DIR_REAR_LEFT   GPIO_NUM_27
+#define MOTOR_DIR_REAR_RIGHT  GPIO_NUM_32
+
+#define LEDC_TIMER LEDC_TIMER_0
+#define LEDC_MODE LEDC_LOW_SPEED_MODE
+#define LEDC_FREQUENCY 5000
+#define LEDC_DUTY_RESOLUTION LEDC_TIMER_10_BIT
+
+#define LEDC_CHANNEL_FRONT_LEFT  LEDC_CHANNEL_0
+#define LEDC_CHANNEL_FRONT_RIGHT LEDC_CHANNEL_1
+#define LEDC_CHANNEL_REAR_LEFT   LEDC_CHANNEL_2
+#define LEDC_CHANNEL_REAR_RIGHT  LEDC_CHANNEL_3
+
+void uart_init() {
+    const uart_config_t uart_config = {
+        .baud_rate = 115200,
+        .data_bits = UART_DATA_8_BITS,
+        .parity = UART_PARITY_DISABLE,
+        .stop_bits = UART_STOP_BITS_1,
+        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    };
+    uart_param_config(UART_NUM, &uart_config);
+    uart_set_pin(UART_NUM, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    uart_driver_install(UART_NUM, BUF_SIZE * 2, 0, 0, NULL, 0);
+}
+
+void ledc_setup() {
+    ledc_timer_config_t ledc_timer = {
+        .speed_mode = LEDC_MODE,
+        .duty_resolution = LEDC_DUTY_RESOLUTION,
+        .timer_num = LEDC_TIMER,
+        .freq_hz = LEDC_FREQUENCY,
+        .clk_cfg = LEDC_AUTO_CLK,
+    };
+    ledc_timer_config(&ledc_timer);
+
+    ledc_channel_config_t ledc_channel_front_left = {
+        .speed_mode = LEDC_MODE,
+        .channel = LEDC_CHANNEL_FRONT_LEFT,
+        .timer_sel = LEDC_TIMER,
+        .intr_type = LEDC_INTR_DISABLE,
+        .gpio_num = MOTOR_PWM_FRONT_LEFT,
+        .duty = 0,
+        .hpoint = 0,
+    };
+    ledc_channel_config(&ledc_channel_front_left);
+
+    ledc_channel_config_t ledc_channel_front_right = {
+        .speed_mode = LEDC_MODE,
+        .channel = LEDC_CHANNEL_FRONT_RIGHT,
+        .timer_sel = LEDC_TIMER,
+        .intr_type = LEDC_INTR_DISABLE,
+        .gpio_num = MOTOR_PWM_FRONT_RIGHT,
+        .duty = 0,
+        .hpoint = 0,
+    };
+    ledc_channel_config(&ledc_channel_front_right);
+
+    ledc_channel_config_t ledc_channel_rear_left = {
+        .speed_mode = LEDC_MODE,
+        .channel = LEDC_CHANNEL_REAR_LEFT,
+        .timer_sel = LEDC_TIMER,
+        .intr_type = LEDC_INTR_DISABLE,
+        .gpio_num = MOTOR_PWM_REAR_LEFT,
+        .duty = 0,
+        .hpoint = 0,
+    };
+    ledc_channel_config(&ledc_channel_rear_left);
+    
+    ledc_channel_config_t ledc_channel_rear_right = {
+        .speed_mode = LEDC_MODE,
+        .channel = LEDC_CHANNEL_REAR_RIGHT,
+        .timer_sel = LEDC_TIMER,
+        .intr_type = LEDC_INTR_DISABLE,
+        .gpio_num = MOTOR_PWM_REAR_RIGHT,
+        .duty = 0,
+        .hpoint = 0,
+    };
+    ledc_channel_config(&ledc_channel_rear_right);
+}
+
+void motor_driver_setup() {
+    ledc_setup();
+
+    gpio_reset_pin(MOTOR_DIR_FRONT_LEFT);
+    gpio_set_direction(MOTOR_DIR_FRONT_LEFT, GPIO_MODE_OUTPUT);
+    gpio_set_level(MOTOR_DIR_FRONT_LEFT, 0);
+
+    gpio_reset_pin(MOTOR_DIR_FRONT_RIGHT);
+    gpio_set_direction(MOTOR_DIR_FRONT_RIGHT, GPIO_MODE_OUTPUT);
+    gpio_set_level(MOTOR_DIR_FRONT_RIGHT, 0);
+    
+    gpio_reset_pin(MOTOR_DIR_REAR_LEFT);
+    gpio_set_direction(MOTOR_DIR_REAR_LEFT, GPIO_MODE_OUTPUT);
+    gpio_set_level(MOTOR_DIR_REAR_LEFT, 0);
+    
+    gpio_reset_pin(MOTOR_DIR_REAR_RIGHT);
+    gpio_set_direction(MOTOR_DIR_REAR_RIGHT, GPIO_MODE_OUTPUT);
+    gpio_set_level(MOTOR_DIR_REAR_RIGHT, 0);
+}
+
+void set_motor_speed_and_direction(ledc_channel_t channel, gpio_num_t dir_pin, float speed_val, int direction) {
+    if (speed_val < 0.0) speed_val = 0.0;
+    if (speed_val > 1.0) speed_val = 1.0;
+
+    gpio_set_level(dir_pin, direction);
+
+    int duty_cycle = (int)(speed_val * ((1 << LEDC_DUTY_RESOLUTION) - 1));
+    
+    ledc_set_duty(LEDC_MODE, channel, duty_cycle);
+    ledc_update_duty(LEDC_MODE, channel);
+}
+
+void app_main(void) {
+    uint8_t *data = (uint8_t *) malloc(BUF_SIZE + 1);
+
+    uart_init();
+    motor_driver_setup();
+    
+    while (1) {
+        int len = uart_read_bytes(UART_NUM, data, BUF_SIZE, 20 / portTICK_PERIOD_MS);
+        
+        if (len > 0) {
+            data[len] = '\0';
+            printf("Received data: %s\n", (char*)data);
+            
+            float temp_linear_x, temp_angular_z;
+            int result = sscanf((char *)data, "%f %f", &temp_linear_x, &temp_angular_z);
+
+            if (result == 2) {
+                linear_x_val = temp_linear_x;
+                angular_z_val = temp_angular_z;
+            } else {
+                printf("Failed to identify data\n");
+            }
+        }
+        
+        float speed = linear_x_val;
+        
+        if (speed > 0.4) {
+            if (angular_z_val < -0.1) {
+                set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_LEFT, MOTOR_DIR_FRONT_LEFT, speed, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_REAR_LEFT, MOTOR_DIR_REAR_LEFT, speed, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_RIGHT, MOTOR_DIR_FRONT_RIGHT, speed * 0.5, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_REAR_RIGHT, MOTOR_DIR_REAR_RIGHT, speed * 0.5, 1);
+                printf("Turning Right Forward\n");
+            } else if (angular_z_val > 0.1) {
+                set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_LEFT, MOTOR_DIR_FRONT_LEFT, speed * 0.5, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_REAR_LEFT, MOTOR_DIR_REAR_LEFT, speed * 0.5, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_RIGHT, MOTOR_DIR_FRONT_RIGHT, speed, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_REAR_RIGHT, MOTOR_DIR_REAR_RIGHT, speed, 1);
+                printf("Turning Left Forward\n");
+            } else {
+                set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_LEFT, MOTOR_DIR_FRONT_LEFT, speed, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_REAR_LEFT, MOTOR_DIR_REAR_LEFT, speed, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_RIGHT, MOTOR_DIR_FRONT_RIGHT, speed, 1);
+                set_motor_speed_and_direction(LEDC_CHANNEL_REAR_RIGHT, MOTOR_DIR_REAR_RIGHT, speed, 1);
+                printf("Moving Straight Forward\n");
+            }
+        } else if (speed > 0.01 && speed <= 0.4) {
+            set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_LEFT, MOTOR_DIR_FRONT_LEFT, 0.0, 1);
+            set_motor_speed_and_direction(LEDC_CHANNEL_REAR_LEFT, MOTOR_DIR_REAR_LEFT, 0.0, 1);
+            set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_RIGHT, MOTOR_DIR_FRONT_RIGHT, 0.0, 1);
+            set_motor_speed_and_direction(LEDC_CHANNEL_REAR_RIGHT, MOTOR_DIR_REAR_RIGHT, 0.0, 1);
+            printf("Ball close - stopped\n");
+        } else {
+            set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_LEFT, MOTOR_DIR_FRONT_LEFT, 0.0, 1);
+            set_motor_speed_and_direction(LEDC_CHANNEL_REAR_LEFT, MOTOR_DIR_REAR_LEFT, 0.0, 1);
+            set_motor_speed_and_direction(LEDC_CHANNEL_FRONT_RIGHT, MOTOR_DIR_FRONT_RIGHT, 0.0, 1);
+            set_motor_speed_and_direction(LEDC_CHANNEL_REAR_RIGHT, MOTOR_DIR_REAR_RIGHT, 0.0, 1);
+            printf("Motors Stopped\n");
+        }
+        
+        esp_rom_delay_us(200000); 
+    }
+}
