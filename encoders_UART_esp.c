@@ -1,7 +1,7 @@
 #include "driver/uart.h"
 #include "driver/gpio.h"
 #include "driver/ledc.h"
-#include "driver/pcnt.h" // New include for PCNT
+#include "driver/pcnt.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -36,8 +36,7 @@ float angular_z_val = 0.0;
 // #define LEDC_CHANNEL_FRONT_RIGHT LEDC_CHANNEL_1
 // #define LEDC_CHANNEL_REAR_LEFT LEDC_CHANNEL_2
 // #define LEDC_CHANNEL_REAR_RIGHT LEDC_CHANNEL_3
-
-// Encoder-specific defines     
+    
 #define ENCODER_M1_A GPIO_NUM_34 
 #define ENCODER_M1_B GPIO_NUM_35 
 #define PCNT_UNIT_M1 PCNT_UNIT_0
@@ -206,10 +205,10 @@ void app_main(void)
 
         if (len > 0)
         {
-            // Check for the newline character
+            
             if (rx_char == '\n')
             {
-                rx_buffer[buffer_index] = '\0'; // Null-terminate the string
+                rx_buffer[buffer_index] = '\0'; 
                 printf("Received data: %s\n", rx_buffer);
                 
                 float temp_linear_x, temp_angular_z;
@@ -226,19 +225,19 @@ void app_main(void)
                     printf("Failed to identify data\n");
                 }
                 
-                // Reset the buffer for the next message
+                
                 buffer_index = 0;
             }
             else
             {
-                // Append the character to the buffer if there's space
+                
                 if (buffer_index < sizeof(rx_buffer) - 1)
                 {
                     rx_buffer[buffer_index++] = rx_char;
                 }
                 else
                 {
-                    // Handle buffer overflow (optional)
+                    
                     buffer_index = 0;
                 }
             }
