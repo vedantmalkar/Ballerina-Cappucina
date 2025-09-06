@@ -6,6 +6,7 @@
 ![ROS](https://img.shields.io/badge/ros-%230A0FF9.svg?style=for-the-badge&logo=ros&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 	
 ## Mentors:
 - Prajwal Avhad
@@ -86,4 +87,21 @@ To implement this project in real life, you’ll need the following hardware com
 <p align="center">
   <img src="media/Ballerina_front_view.jpeg" width="300" />
 </p>
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 48%;">
+    <video width="100%" controls>
+      <source src="media/Ballerina_test_movement.webm" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div style="width: 48%;">
+    <video width="100%" controls>
+      <source src="media/Ball_Trapping.webm" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+
 
