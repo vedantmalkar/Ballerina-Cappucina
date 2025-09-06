@@ -54,7 +54,11 @@ ros2 launch ball_tracker detect_ball_launch.py color:=yellow
 ```
 ros2 run ball_tracker move_bot
 ```
-<img src="media/simulation_gazebo.png" width="300" />
+
+
+<div style="text-align: center;">
+  <img src="media/simulation_gazebo.png" width="300" />
+</div>
 
 ## Hardware:
 
@@ -74,4 +78,7 @@ To implement this project in real life, you’ll need the following hardware com
 
 - MG995 Servo Motor (For ball trapping mechanism)
 
-![Robot Image](media/Ballerina_front_view.jpeg)
+<div style="text-align: center;">
+  <img src="media/Ballerina_front_view.jpeg" width="300" />
+</div>
+
