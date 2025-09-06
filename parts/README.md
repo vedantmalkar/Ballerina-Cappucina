@@ -22,30 +22,6 @@ This folder contains the CAD files for the **Ballerina Cappucina** robot, detail
 - Designed for **3D printing or machining**, depending on available resources.  
 - The files are intended to facilitate precise assembly of the mechanical components of the Ballerina Cappucina robot.
 
----
 
-## Assembly Overview
 
-Simplified schematic of the mechanical layout:
-
-          [Ball_rotator]
-                │
-                │
-         ┌──────┴──────┐
-         │   Circular  │
-         │   Chassis   │
-         └──────┬──────┘
-                │
-        ┌───────┴───────┐
-        │      Base      │
-        │  (Electronics: │
-        │  Servo,ESP32,  │
-        │  Jetson Nano  )│
-        └───────┬───────┘
-        │               │
-   [Motorholder]     [Motorholder]
-        │               │
-       [Motor]          [Motor]
-        │               │
-[Omnidirectional Wheel] [Omnidirectional Wheel]
 
