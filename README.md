@@ -56,9 +56,9 @@ ros2 run ball_tracker move_bot
 ```
 
 
-<div style="text-align: center;">
+<p align="center">
   <img src="media/simulation_gazebo.png" width="300" />
-</div>
+</p>
 
 ## Hardware:
 
@@ -78,7 +78,7 @@ To implement this project in real life, you’ll need the following hardware com
 
 - MG995 Servo Motor (For ball trapping mechanism)
 
-<div style="text-align: center;">
+<p align="center">
   <img src="media/Ballerina_front_view.jpeg" width="300" />
-</div>
+</p>
 
