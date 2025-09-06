@@ -54,8 +54,7 @@ ros2 launch ball_tracker detect_ball_launch.py color:=yellow
 ```
 ros2 run ball_tracker move_bot
 ```
-![Robot Image](media/simulation_gazebo.png)
-
+<img src="media/simulation_gazebo.png" width="300" />
 
 ## Hardware:
 
