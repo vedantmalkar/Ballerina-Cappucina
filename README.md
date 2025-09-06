@@ -14,12 +14,15 @@ Ballerina Cappucina, a graceful omnidirectional robot with a critical mission. T
 
 A custom omnidirectional mobile base is created that allows for fluid movement, and a vision system using OpenCV for color detection. Integrating these systems we enable Ballerina Cappucina to autonomously seek, collect, and sort the objects, clearing the stage.
 
+## Core Idea:
+The robot begins by rotating in place, scanning the surroundings until it detects a ball of a specific color, which is chosen beforehand using OpenCV for color detection. Once it identifies the target ball, it moves toward it, aligning itself over the ball.
+
+Underneath the robot, there’s a unique cavity mechanism, resembling a revolving door. As the robot moves over the ball, this mechanism traps the ball inside by closing a flapping door-like structure. After the ball is secured inside, the robot resumes its search, rotating again to find another ball, and the process repeats itself.
 
 ## [ros_ws](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/ros_ws)
 This folder contains the source files and configuration necessary to run the robot simulation in ROS. It includes the core scripts for controlling the robot’s movement, as well as pre-configured launch files. Additionally, you’ll find detailed instructions on how to set up and run the simulation in a ROS environment.
 
-
-## [esp_code](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/ESP_Code)
+## [esp_code](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/esp_code)
 In this folder, you will find the source code for the ESP32 as well as detailed instructions on how to flash the code onto the device.
 
 ---
@@ -27,19 +30,19 @@ In this folder, you will find the source code for the ESP32 as well as detailed 
 
 To implement this project in real life, you’ll need the following hardware components:
 
-- Jetson Nano (Main computing unit)
+- [Jetson Nano](https://www.electropi.in/nvidia-jetson-nano-developer-kit-b01) (Main computing unit)
 
-- 4 Omni-Wheels (For omnidirectional movement)
+- 4 [Omni-Wheels](https://robokits.co.in/robot-wheels/omni-wheels/premium-quality-brass-roller-bearing-omni-wheel-dual-row-100mm-dia) (For omnidirectional movement)
 
-- 4 Rhino GB37 Servo Motors (For movement control)
+- 4 [Rhino GB37 Servo Motors](https://robokits.co.in/motors/rhino-gb37-12v-dc-geared-motor/dc-12v-encoder-servo-motors/rhino-gb37-12v-110rpm-6.5kgcm-dc-geared-encoder-servo-motor) (For movement control)
 
-- 4 Cytron DC Motor Drivers (For motor control)
+- 4 [Cytron DC Motor Drivers](https://robu.in/product/enhanced-13amp-dc-motor-driver-30a-peak-10-seconds/) (For motor control)
 
 - Webcam (For visual perception)
 
-- ESP32 (For communication and control)
+- [ESP32](https://www.amazon.in/SquadPixel-ESP-32-Bluetooth-Development-Board/dp/B071XP56LM) (For communication and control)
 
-- MG995 Servo Motor (For ball trapping mechanism)
+- [MG995 Servo Motor](https://www.amazon.in/Robodo-Electronics-MG995-TowerPro-Servo/dp/B00MTH0RMI?source=ps-sl-shoppingads-lpcontext&psc=1&smid=AJ6SIZC8YQDZX) (For ball trapping mechanism)
 
 <p align="center">
   <img src="media/Ballerina_front_view.jpeg" width="300" />
@@ -65,11 +68,11 @@ To implement this project in real life, you’ll need the following hardware com
       <h3>Vedant Malkar</h3>
       <p>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vmmalkar_b24@et.vjti.ac.in" target="_blank" style="text-decoration: none !important; display: inline-block;">
-          <img src="media/gmail.png" alt="Gmail" width="50" style="border: 0;" />
+          <img src="media/gmail.png" alt="Gmail" width="30" style="border: 0;" />
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/vedantmalkar" target="_blank" style="text-decoration: none !important; display: inline-block;">
-          <img src="media/github_icon.webp" alt="GitHub" width="50" style="border: 0;" />
+          <img src="media/github_icon.webp" alt="GitHub" width="30" style="border: 0;" />
         </a>
       </p>
     </div>
@@ -77,11 +80,11 @@ To implement this project in real life, you’ll need the following hardware com
       <h3>Lakshya Lalwani</h3>
       <p>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ldlalwani_b24@et.vjti.ac.in" target="_blank" style="text-decoration: none !important; display: inline-block;">
-          <img src="media/gmail.png" alt="Gmail" width="50" style="border: 0;" />
+          <img src="media/gmail.png" alt="Gmail" width="30" style="border: 0;" />
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/Lakshyaa1" target="_blank" style="text-decoration: none !important; display: inline-block;">
-          <img src="media/github_icon.webp" alt="GitHub" width="50" style="border: 0;" />
+          <img src="media/github_icon.webp" alt="GitHub" width="30" style="border: 0;" />
         </a>
       </p>
     </div>
@@ -89,11 +92,11 @@ To implement this project in real life, you’ll need the following hardware com
       <h3>Bhakti Assar</h3>
       <p>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Bbassar_b24@et.vjti.ac.in" target="_blank" style="text-decoration: none !important; display: inline-block;">
-          <img src="media/gmail.png" alt="Gmail" width="50" style="border: 0;" />
+          <img src="media/gmail.png" alt="Gmail" width="30" style="border: 0;" />
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/Bhakti-A" target="_blank" style="text-decoration: none !important; display: inline-block;">
-          <img src="media/github_icon.webp" alt="GitHub" width="50" style="border: 0;" />
+          <img src="media/github_icon.webp" alt="GitHub" width="30" style="border: 0;" />
         </a>
       </p>
     </div>
