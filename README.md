@@ -100,7 +100,7 @@ To implement this project in real life, you’ll need the following hardware com
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vmmalkar_b24@et.vjti.ac.in" target="_blank" style="text-decoration: none; display: inline-block; margin-right: 20px;">
           <img src="media/gmail.png" alt="Gmail" width="50" />
         </a>
-        <a href="https://github.com/vedantmalkar" target="_blank" style="text-decoration: none; display: inline-block;">
+        <a href="https://github.com/vedantmalkar" target="_blank" style="text-decoration: none; display: inline-block; margin-left: 20px;">
           <img src="media/github_icon.webp" alt="GitHub" width="50" />
         </a>
       </p>
@@ -111,7 +111,7 @@ To implement this project in real life, you’ll need the following hardware com
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ldlalwani_b24@et.vjti.ac.in" target="_blank" style="text-decoration: none; display: inline-block; margin-right: 20px;">
           <img src="media/gmail.png" alt="Gmail" width="50" />
         </a>
-        <a href="https://github.com/Lakshyaa1" target="_blank" style="text-decoration: none; display: inline-block;">
+        <a href="https://github.com/Lakshyaa1" target="_blank" style="text-decoration: none; display: inline-block; margin-left: 20px;">
           <img src="media/github_icon.webp" alt="GitHub" width="50" />
         </a>
       </p>
@@ -122,7 +122,7 @@ To implement this project in real life, you’ll need the following hardware com
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Bbassar_b24@et.vjti.ac.in" target="_blank" style="text-decoration: none; display: inline-block; margin-right: 20px;">
           <img src="media/gmail.png" alt="Gmail" width="50" />
         </a>
-        <a href="https://github.com/Bhakti-A" target="_blank" style="text-decoration: none; display: inline-block;">
+        <a href="https://github.com/Bhakti-A" target="_blank" style="text-decoration: none; display: inline-block; margin-left: 20px;">
           <img src="media/github_icon.webp" alt="GitHub" width="50" />
         </a>
       </p>
