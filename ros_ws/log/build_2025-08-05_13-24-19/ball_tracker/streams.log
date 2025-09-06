@@ -1,0 +1,28 @@
+[0.723s] Invoking command in '/home/vedant/ros_ws/src/ball_tracker': PYTHONPATH=/home/vedant/ros_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracker build --build-base /home/vedant/ros_ws/build/ball_tracker/build install --record /home/vedant/ros_ws/build/ball_tracker/install.log --single-version-externally-managed install_data
+[0.950s] running egg_info
+[0.951s] writing ../../build/ball_tracker/ball_tracker.egg-info/PKG-INFO
+[0.951s] writing dependency_links to ../../build/ball_tracker/ball_tracker.egg-info/dependency_links.txt
+[0.951s] writing entry points to ../../build/ball_tracker/ball_tracker.egg-info/entry_points.txt
+[0.951s] writing requirements to ../../build/ball_tracker/ball_tracker.egg-info/requires.txt
+[0.951s] writing top-level names to ../../build/ball_tracker/ball_tracker.egg-info/top_level.txt
+[0.953s] reading manifest file '../../build/ball_tracker/ball_tracker.egg-info/SOURCES.txt'
+[0.954s] writing manifest file '../../build/ball_tracker/ball_tracker.egg-info/SOURCES.txt'
+[0.955s] running build
+[0.955s] running build_py
+[0.955s] copying ball_tracker/move_bot.py -> /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker
+[0.956s] copying ball_tracker/process_image.py -> /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker
+[0.956s] running install
+[0.956s] running install_lib
+[0.959s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/move_bot.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[0.959s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/process_image.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[0.960s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/move_bot.py to move_bot.cpython-310.pyc
+[0.961s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/process_image.py to process_image.cpython-310.pyc
+[0.963s] running install_data
+[0.964s] copying config/yellow_ball.yaml -> /home/vedant/ros_ws/install/ball_tracker/share/ball_tracker/config
+[0.964s] running install_egg_info
+[0.966s] removing '/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker-0.0.0-py3.10.egg-info' (and everything under it)
+[0.966s] Copying ../../build/ball_tracker/ball_tracker.egg-info to /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker-0.0.0-py3.10.egg-info
+[0.967s] running install_scripts
+[0.987s] Installing detect_ball script to /home/vedant/ros_ws/install/ball_tracker/lib/ball_tracker
+[0.987s] Installing move_bot script to /home/vedant/ros_ws/install/ball_tracker/lib/ball_tracker
+[0.987s] writing list of installed files to '/home/vedant/ros_ws/build/ball_tracker/install.log'

@@ -1,0 +1,1 @@
+/home/vedant/ros_ws/build/gz_rosa_control/ament_cmake_core/gz_rosa_controlConfig.cmake

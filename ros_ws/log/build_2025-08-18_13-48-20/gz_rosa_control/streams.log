@@ -1,0 +1,108 @@
+[0.226s] Invoking command in '/home/vedant/ros_ws/build/gz_rosa_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/ros_ws/build/gz_rosa_control -- -j12 -l12
+[0.311s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.443s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.456s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.491s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.495s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.505s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.523s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.544s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.599s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.602s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.743s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.784s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.820s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.855s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.864s] -- Searching for dependencies of ignition-math6
+[0.867s] -- Looking for OGRE...
+[0.874s] -- Found Ogre Ghadamon (1.9.0)
+[0.875s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.888s] -- Looking for OGRE_Paging...
+[0.888s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.889s] -- Looking for OGRE_Terrain...
+[0.889s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.889s] -- Looking for OGRE_Property...
+[0.889s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.889s] -- Looking for OGRE_RTShaderSystem...
+[0.889s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.889s] -- Looking for OGRE_Volume...
+[0.890s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.890s] -- Looking for OGRE_Overlay...
+[0.890s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.960s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.961s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.961s] -- Searching for dependencies of ignition-transport8
+[0.974s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.987s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.992s] -- Checking for module 'libzmq >= 4'
+[1.012s] --   Found libzmq , version 4.3.4
+[1.069s] -- Checking for module 'uuid'
+[1.088s] --   Found uuid, version 2.37.2
+[1.135s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.136s] -- Searching for dependencies of ignition-msgs5
+[1.161s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.170s] -- Checking for module 'tinyxml2'
+[1.187s] --   Found tinyxml2, version 9.0.0
+[1.234s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.236s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.236s] -- Searching for dependencies of ignition-common3
+[1.237s] -- Looking for dlfcn.h - found
+[1.237s] -- Looking for libdl - found
+[1.260s] -- Searching for <ignition-common3> component [graphics]
+[1.261s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.262s] -- Searching for dependencies of ignition-common3-graphics
+[1.263s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.265s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.266s] -- Searching for dependencies of ignition-fuel_tools4
+[1.321s] -- Checking for module 'jsoncpp'
+[1.340s] --   Found jsoncpp, version 1.9.5
+[1.391s] -- Checking for module 'libzip'
+[1.409s] --   Found libzip, version 1.7.3
+[1.454s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.454s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.455s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.460s] -- Gazebo version: 11.10
+[1.462s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.486s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.514s] -- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)
+[1.524s] -- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.672s] -- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.680s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.683s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.752s] -- Configuring done
+[1.807s] -- Generating done
+[1.815s] -- Build files have been written to: /home/vedant/ros_ws/build/gz_rosa_control
+[1.859s] [35m[1mConsolidate compiler generated dependencies of target gazebo_ros_omni_drive[0m
+[1.971s] [ 50%] [32mBuilding CXX object CMakeFiles/gazebo_ros_omni_drive.dir/src/gazebo_ros_omni_drive.cpp.o[0m
+[4.789s] In file included from [01m[K/home/vedant/ros_ws/src/gz_rosa_control/src/gazebo_ros_omni_drive.cpp:70[m[K:
+[4.790s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[4.790s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[4.790s]       |  [01;35m[K^~~~~~~[m[K
+[14.565s] [100%] [32m[1mLinking CXX shared library libgazebo_ros_omni_drive.so[0m
+[15.958s] [100%] Built target gazebo_ros_omni_drive
+[15.971s] Invoked command in '/home/vedant/ros_ws/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/ros_ws/build/gz_rosa_control -- -j12 -l12
+[15.995s] Invoking command in '/home/vedant/ros_ws/build/gz_rosa_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/ros_ws/build/gz_rosa_control
+[16.015s] -- Install configuration: ""
+[16.016s] -- Execute custom install script
+[16.018s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/lib/libgazebo_ros_omni_drive.so
+[16.019s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/launch/omni_bot.launch.py
+[16.019s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/urdf/omni_bot.urdf
+[16.020s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/library_path.sh
+[16.020s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/library_path.dsv
+[16.021s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/ament_index/resource_index/package_run_dependencies/gz_rosa_control
+[16.021s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/ament_index/resource_index/parent_prefix_path/gz_rosa_control
+[16.022s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/ament_prefix_path.sh
+[16.022s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/ament_prefix_path.dsv
+[16.022s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/path.sh
+[16.022s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/path.dsv
+[16.023s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.bash
+[16.023s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.sh
+[16.023s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.zsh
+[16.023s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.dsv
+[16.024s] -- Symlinking: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/package.dsv
+[16.042s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/ament_index/resource_index/packages/gz_rosa_control
+[16.043s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/cmake/ament_cmake_export_libraries-extras.cmake
+[16.043s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/cmake/gz_rosa_controlConfig.cmake
+[16.044s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/cmake/gz_rosa_controlConfig-version.cmake
+[16.044s] -- Up-to-date symlink: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/package.xml
+[16.050s] Invoked command in '/home/vedant/ros_ws/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/ros_ws/build/gz_rosa_control

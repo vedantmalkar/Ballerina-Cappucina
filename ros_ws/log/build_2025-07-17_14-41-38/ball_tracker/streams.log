@@ -1,0 +1,27 @@
+[0.847s] Invoking command in '/home/vedant/ros_ws/src/ball_tracker': PYTHONPATH=/home/vedant/ros_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracker build --build-base /home/vedant/ros_ws/build/ball_tracker/build install --record /home/vedant/ros_ws/build/ball_tracker/install.log --single-version-externally-managed install_data
+[1.160s] running egg_info
+[1.161s] writing ../../build/ball_tracker/ball_tracker.egg-info/PKG-INFO
+[1.161s] writing dependency_links to ../../build/ball_tracker/ball_tracker.egg-info/dependency_links.txt
+[1.162s] writing entry points to ../../build/ball_tracker/ball_tracker.egg-info/entry_points.txt
+[1.162s] writing requirements to ../../build/ball_tracker/ball_tracker.egg-info/requires.txt
+[1.162s] writing top-level names to ../../build/ball_tracker/ball_tracker.egg-info/top_level.txt
+[1.164s] reading manifest file '../../build/ball_tracker/ball_tracker.egg-info/SOURCES.txt'
+[1.165s] writing manifest file '../../build/ball_tracker/ball_tracker.egg-info/SOURCES.txt'
+[1.165s] running build
+[1.165s] running build_py
+[1.165s] copying ball_tracker/detect_ball.py -> /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker
+[1.166s] copying ball_tracker/process_image.py -> /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker
+[1.166s] running install
+[1.166s] running install_lib
+[1.169s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/detect_ball.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[1.169s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/process_image.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[1.169s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/detect_ball.py to detect_ball.cpython-310.pyc
+[1.171s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/process_image.py to process_image.cpython-310.pyc
+[1.173s] running install_data
+[1.173s] running install_egg_info
+[1.175s] removing '/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker-0.0.0-py3.10.egg-info' (and everything under it)
+[1.175s] Copying ../../build/ball_tracker/ball_tracker.egg-info to /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker-0.0.0-py3.10.egg-info
+[1.176s] running install_scripts
+[1.203s] Installing detect_ball script to /home/vedant/ros_ws/install/ball_tracker/lib/ball_tracker
+[1.203s] writing list of installed files to '/home/vedant/ros_ws/build/ball_tracker/install.log'
+[1.237s] Invoked command in '/home/vedant/ros_ws/src/ball_tracker' returned '0': PYTHONPATH=/home/vedant/ros_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracker build --build-base /home/vedant/ros_ws/build/ball_tracker/build install --record /home/vedant/ros_ws/build/ball_tracker/install.log --single-version-externally-managed install_data

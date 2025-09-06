@@ -1,0 +1,42 @@
+[0.677s] Invoking command in '/home/vedant/ros_ws/build/ball_tracker': PYTHONPATH=/home/vedant/ros_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/vedant/ros_ws/build/ball_tracker/build
+[0.936s] running develop
+[1.087s] Removing /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball-tracker.egg-link (link to .)
+[1.112s] Invoked command in '/home/vedant/ros_ws/build/ball_tracker' returned '0': PYTHONPATH=/home/vedant/ros_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/vedant/ros_ws/build/ball_tracker/build
+[1.113s] Invoking command in '/home/vedant/ros_ws/src/ball_tracker': PYTHONPATH=/home/vedant/ros_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracker build --build-base /home/vedant/ros_ws/build/ball_tracker/build install --record /home/vedant/ros_ws/build/ball_tracker/install.log --single-version-externally-managed install_data --force
+[1.361s] running egg_info
+[1.362s] writing ../../build/ball_tracker/ball_tracker.egg-info/PKG-INFO
+[1.362s] writing dependency_links to ../../build/ball_tracker/ball_tracker.egg-info/dependency_links.txt
+[1.363s] writing entry points to ../../build/ball_tracker/ball_tracker.egg-info/entry_points.txt
+[1.363s] writing requirements to ../../build/ball_tracker/ball_tracker.egg-info/requires.txt
+[1.363s] writing top-level names to ../../build/ball_tracker/ball_tracker.egg-info/top_level.txt
+[1.365s] reading manifest file '../../build/ball_tracker/ball_tracker.egg-info/SOURCES.txt'
+[1.366s] writing manifest file '../../build/ball_tracker/ball_tracker.egg-info/SOURCES.txt'
+[1.366s] running build
+[1.366s] running build_py
+[1.367s] copying ball_tracker/move_bot.py -> /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker
+[1.367s] copying ball_tracker/process_image.py -> /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker
+[1.367s] running install
+[1.368s] running install_lib
+[1.370s] creating /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[1.370s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/move_bot.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[1.370s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/detect_ball.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[1.370s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/process_image.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[1.371s] copying /home/vedant/ros_ws/build/ball_tracker/build/lib/ball_tracker/__init__.py -> /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker
+[1.371s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/move_bot.py to move_bot.cpython-310.pyc
+[1.372s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/detect_ball.py to detect_ball.cpython-310.pyc
+[1.373s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/process_image.py to process_image.cpython-310.pyc
+[1.375s] byte-compiling /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker/__init__.py to __init__.cpython-310.pyc
+[1.375s] running install_data
+[1.375s] copying resource/ball_tracker -> /home/vedant/ros_ws/install/ball_tracker/share/ament_index/resource_index/packages
+[1.376s] copying package.xml -> /home/vedant/ros_ws/install/ball_tracker/share/ball_tracker
+[1.376s] copying launch/detect_ball_launch.py -> /home/vedant/ros_ws/install/ball_tracker/share/ball_tracker/launch
+[1.376s] copying config/blue_ball.yaml -> /home/vedant/ros_ws/install/ball_tracker/share/ball_tracker/config
+[1.376s] copying config/green_ball.yaml -> /home/vedant/ros_ws/install/ball_tracker/share/ball_tracker/config
+[1.377s] copying config/yellow_ball.yaml -> /home/vedant/ros_ws/install/ball_tracker/share/ball_tracker/config
+[1.377s] running install_egg_info
+[1.379s] Copying ../../build/ball_tracker/ball_tracker.egg-info to /home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages/ball_tracker-0.0.0-py3.10.egg-info
+[1.380s] running install_scripts
+[1.403s] Installing detect_ball script to /home/vedant/ros_ws/install/ball_tracker/lib/ball_tracker
+[1.404s] Installing move_bot script to /home/vedant/ros_ws/install/ball_tracker/lib/ball_tracker
+[1.404s] writing list of installed files to '/home/vedant/ros_ws/build/ball_tracker/install.log'
+[1.449s] Invoked command in '/home/vedant/ros_ws/src/ball_tracker' returned '0': PYTHONPATH=/home/vedant/ros_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/ros_ws/install/ball_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracker build --build-base /home/vedant/ros_ws/build/ball_tracker/build install --record /home/vedant/ros_ws/build/ball_tracker/install.log --single-version-externally-managed install_data --force

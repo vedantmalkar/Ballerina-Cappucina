@@ -1,0 +1,29 @@
+[0.012s] Invoking command in '/home/vedant/ros_ws/build/gz_rosa_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vedant/ros_ws/build/gz_rosa_control -- -j12 -l12
+[0.077s] [100%] Built target gazebo_ros_omni_drive
+[0.087s] Invoked command in '/home/vedant/ros_ws/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vedant/ros_ws/build/gz_rosa_control -- -j12 -l12
+[0.099s] Invoking command in '/home/vedant/ros_ws/build/gz_rosa_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vedant/ros_ws/build/gz_rosa_control
+[0.106s] -- Install configuration: ""
+[0.106s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/lib/libgazebo_ros_omni_drive.so
+[0.106s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/launch
+[0.106s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/launch/omni_bot.launch.py
+[0.106s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/urdf
+[0.106s] -- Installing: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/urdf/omni_bot.urdf
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/library_path.sh
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/library_path.dsv
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/ament_index/resource_index/package_run_dependencies/gz_rosa_control
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/ament_index/resource_index/parent_prefix_path/gz_rosa_control
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/ament_prefix_path.sh
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/ament_prefix_path.dsv
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/path.sh
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/environment/path.dsv
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.bash
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.sh
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.zsh
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/local_setup.dsv
+[0.107s] -- Installing: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/package.dsv
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/ament_index/resource_index/packages/gz_rosa_control
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/cmake/ament_cmake_export_libraries-extras.cmake
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/cmake/gz_rosa_controlConfig.cmake
+[0.107s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/cmake/gz_rosa_controlConfig-version.cmake
+[0.108s] -- Up-to-date: /home/vedant/ros_ws/install/gz_rosa_control/share/gz_rosa_control/package.xml
+[0.109s] Invoked command in '/home/vedant/ros_ws/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vedant/ros_ws/build/gz_rosa_control

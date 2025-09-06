@@ -1,0 +1,10 @@
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/uninstall.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/gz_rosa_control_uninstall.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/gazebo_ros_omni_drive.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/test.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/edit_cache.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/rebuild_cache.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/list_install_components.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/install.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/install/local.dir
+/home/vedant/ros_ws/build/gz_rosa_control/CMakeFiles/install/strip.dir

@@ -1,0 +1,150 @@
+[0.014s] Invoking command in '/home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vedant/final_ballerina/Ballerina-Cappucina -DCMAKE_INSTALL_PREFIX=/home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control
+[0.209s] -- The C compiler identification is GNU 11.4.0
+[0.336s] -- The CXX compiler identification is GNU 11.4.0
+[0.353s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.477s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.479s] -- Detecting C compile features
+[0.480s] -- Detecting C compile features - done
+[0.485s] -- Detecting CXX compiler ABI info
+[0.594s] -- Detecting CXX compiler ABI info - done
+[0.604s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.604s] -- Detecting CXX compile features
+[0.604s] -- Detecting CXX compile features - done
+[0.610s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.820s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.958s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.037s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.046s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.062s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.090s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.122s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.208s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.214s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.358s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.399s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.450s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.467s] -- Looking for pthread.h
+[1.583s] -- Looking for pthread.h - found
+[1.584s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.688s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.689s] -- Found Threads: TRUE  
+[1.788s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.808s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.810s] -- Checking for module 'bullet>=2.82'
+[1.828s] --   Found bullet, version 3.05
+[1.986s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.057s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.099s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.153s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.184s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.194s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.213s] -- Searching for dependencies of ignition-math6
+[2.218s] -- Looking for OGRE...
+[2.219s] -- OGRE_PREFIX_WATCH changed.
+[2.227s] -- Checking for module 'OGRE'
+[2.245s] --   Found OGRE, version 1.9.0
+[2.295s] -- Found Ogre Ghadamon (1.9.0)
+[2.305s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.318s] -- Looking for OGRE_Paging...
+[2.326s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.326s] -- Looking for OGRE_Terrain...
+[2.332s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.332s] -- Looking for OGRE_Property...
+[2.338s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.338s] -- Looking for OGRE_RTShaderSystem...
+[2.345s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.345s] -- Looking for OGRE_Volume...
+[2.351s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.351s] -- Looking for OGRE_Overlay...
+[2.357s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.470s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.475s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.475s] -- Searching for dependencies of ignition-transport8
+[2.497s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.511s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.517s] -- Checking for module 'libzmq >= 4'
+[2.541s] --   Found libzmq , version 4.3.4
+[2.592s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.602s] -- Checking for module 'uuid'
+[2.622s] --   Found uuid, version 2.37.2
+[2.671s] -- Found UUID: TRUE  
+[2.675s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.676s] -- Searching for dependencies of ignition-msgs5
+[2.701s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.709s] -- Checking for module 'tinyxml2'
+[2.727s] --   Found tinyxml2, version 9.0.0
+[2.783s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.787s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.788s] -- Searching for dependencies of ignition-common3
+[2.788s] -- Looking for dlfcn.h - found
+[2.789s] -- Looking for libdl - found
+[2.791s] -- Found DL: TRUE  
+[2.810s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.811s] -- Searching for <ignition-common3> component [graphics]
+[2.815s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.816s] -- Searching for dependencies of ignition-common3-graphics
+[2.816s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.821s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.822s] -- Searching for dependencies of ignition-fuel_tools4
+[2.934s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.951s] -- Checking for module 'jsoncpp'
+[2.971s] --   Found jsoncpp, version 1.9.5
+[3.018s] -- Found JSONCPP: TRUE  
+[3.028s] -- Checking for module 'libzip'
+[3.049s] --   Found libzip, version 1.7.3
+[3.097s] -- Found ZIP: TRUE  
+[3.097s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.098s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.098s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.104s] -- Gazebo version: 11.10
+[3.104s] -- Checking for module 'tbb'
+[3.125s] --   Found tbb, version 2021.5.0
+[3.183s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.216s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.264s] -- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)
+[3.283s] -- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.445s] -- Found tf2_geometry_msgs: 0.25.15 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.459s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.462s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.463s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.551s] -- Configuring done
+[3.605s] -- Generating done
+[3.612s] -- Build files have been written to: /home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control
+[3.628s] Invoked command in '/home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vedant/final_ballerina/Ballerina-Cappucina -DCMAKE_INSTALL_PREFIX=/home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control
+[3.630s] Invoking command in '/home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control -- -j12 -l12
+[3.700s] [ 50%] [32mBuilding CXX object CMakeFiles/gazebo_ros_omni_drive.dir/src/gazebo_ros_omni_drive.cpp.o[0m
+[7.109s] In file included from [01m[K/home/vedant/final_ballerina/Ballerina-Cappucina/src/gazebo_ros_omni_drive.cpp:70[m[K:
+[7.109s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[7.109s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[7.109s]       |  [01;35m[K^~~~~~~[m[K
+[25.793s] [100%] [32m[1mLinking CXX shared library libgazebo_ros_omni_drive.so[0m
+[27.031s] [100%] Built target gazebo_ros_omni_drive
+[27.047s] Invoked command in '/home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control -- -j12 -l12
+[27.061s] Invoking command in '/home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control
+[27.071s] -- Install configuration: ""
+[27.071s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/lib/libgazebo_ros_omni_drive.so
+[27.079s] -- Set runtime path of "/home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/lib/libgazebo_ros_omni_drive.so" to ""
+[27.079s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/launch
+[27.079s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/launch/omni_bot.launch.py
+[27.079s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/urdf
+[27.080s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/urdf/omni_bot.urdf
+[27.080s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/environment/library_path.sh
+[27.080s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/environment/library_path.dsv
+[27.080s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/ament_index/resource_index/package_run_dependencies/gz_rosa_control
+[27.080s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/ament_index/resource_index/parent_prefix_path/gz_rosa_control
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/environment/ament_prefix_path.sh
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/environment/ament_prefix_path.dsv
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/environment/path.sh
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/environment/path.dsv
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/local_setup.bash
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/local_setup.sh
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/local_setup.zsh
+[27.081s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/local_setup.dsv
+[27.082s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/package.dsv
+[27.082s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/ament_index/resource_index/packages/gz_rosa_control
+[27.082s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/cmake/ament_cmake_export_libraries-extras.cmake
+[27.082s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/cmake/gz_rosa_controlConfig.cmake
+[27.082s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/cmake/gz_rosa_controlConfig-version.cmake
+[27.082s] -- Installing: /home/vedant/final_ballerina/Ballerina-Cappucina/install/gz_rosa_control/share/gz_rosa_control/package.xml
+[27.084s] Invoked command in '/home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/final_ballerina/Ballerina-Cappucina/build/gz_rosa_control
