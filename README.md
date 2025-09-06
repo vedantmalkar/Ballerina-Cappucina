@@ -54,5 +54,25 @@ ros2 launch ball_tracker detect_ball_launch.py color:=yellow
 ```
 ros2 run ball_tracker move_bot
 ```
+![Robot Image](media/simulation_gazebo.png)
 
 
+## Hardware:
+
+To implement this project in real life, you’ll need the following hardware components:
+
+- Jetson Nano (Main computing unit)
+
+- 4 Omni-Wheels (For omnidirectional movement)
+
+- 4 Rhino GB37 Servo Motors (For movement control)
+
+- 4 Cytron DC Motor Drivers (For motor control)
+
+- Webcam (For visual perception)
+
+- ESP32 (For communication and control)
+
+- MG995 Servo Motor (For ball trapping mechanism)
+
+![Robot Image](media/Ballerina_front_view.jpeg)
