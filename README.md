@@ -97,41 +97,39 @@ To implement this project in real life, you’ll need the following hardware com
     <div style="width: 30%;">
       <h3>Vedant Malkar</h3>
       <p>
-        Email: 
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vmmalkar_b24@et.vjti.ac.in" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Gmail_icon_%282013-2020%29.png" alt="Gmail" width="30" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Gmail_icon_%282013-2020%29.png" alt="Gmail" width="30" style="margin-right: 10px;" />
+        </a>
+        <a href="https://github.com/vedantmalkar" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
         </a>
       </p>
-      <a href="https://github.com/vedantmalkar" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
-      </a>
     </div>
     <div style="width: 30%;">
       <h3>Lakshya Lalwani</h3>
       <p>
-        Email: 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lakshya.lalwani@example.com" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Gmail_icon_%282013-2020%29.png" alt="Gmail" width="30" />
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ldlalwani_b24@et.vjti.ac.in" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Gmail_icon_%282013-2020%29.png" alt="Gmail" width="30" style="margin-right: 10px;" />
+        </a>
+        <a href="https://github.com/Lakshyaa1" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
         </a>
       </p>
-      <a href="https://github.com/Lakshyaa1" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
-      </a>
     </div>
     <div style="width: 30%;">
       <h3>Bhakti Assar</h3>
       <p>
-        Email: 
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Bbassar_b24@et.vjti.ac.in" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Gmail_icon_%282013-2020%29.png" alt="Gmail" width="30" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Gmail_icon_%282013-2020%29.png" alt="Gmail" width="30" style="margin-right: 10px;" />
+        </a>
+        <a href="https://github.com/Bhakti-A" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
         </a>
       </p>
-      <a href="https://github.com/Bhakti-A" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
-      </a>
     </div>
   </div>
 </p>
+
 
 
 
