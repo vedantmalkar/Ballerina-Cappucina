@@ -53,7 +53,7 @@ To implement this project in real life, you’ll need the following hardware com
 ## Mentors:
 - Prajwal Avhad
 - Soham Kute
-- Harsh
+- Harsh Sagare
 
 ## Mentees:
 - Lakshya Lalwani
