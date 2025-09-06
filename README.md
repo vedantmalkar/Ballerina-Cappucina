@@ -90,3 +90,30 @@ To implement this project in real life, you’ll need the following hardware com
 - Vedant Malkar
 - Bhakti Assar
 
+# Contact Us
+
+<p align="center">
+  <div style="display: flex; justify-content: space-around; width: 100%; text-align: center;">
+    <div style="width: 30%;">
+      <h3>Vedant Malkar</h3>
+      <a href="https://github.com/vedantmalkar" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
+      </a>
+    </div>
+    <div style="width: 30%;">
+      <h3>Lakshya Lalwani</h3>
+      <a href="https://github.com/Lakshyaa1" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
+      </a>
+    </div>
+    <div style="width: 30%;">
+      <h3>Bhakti Assar</h3>
+      <a href="https://github.com/Bhakti-A" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
+      </a>
+    </div>
+  </div>
+</p>
+
+
+
