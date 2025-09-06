@@ -101,7 +101,7 @@ To implement this project in real life, you’ll need the following hardware com
           <img src="media/gmail.png" alt="Gmail" width="50" style="margin-right: 10px;" />
         </a>
         <a href="https://github.com/vedantmalkar" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
+          <img src="media/github_icon.webp" alt="GitHub" width="50" />
         </a>
       </p>
     </div>
@@ -112,7 +112,7 @@ To implement this project in real life, you’ll need the following hardware com
           <img src="media/gmail.png" alt="Gmail" width="50" style="margin-right: 10px;" />
         </a>
         <a href="https://github.com/Lakshyaa1" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
+          <img src="media/github_icon.webp" alt="GitHub" width="50" />
         </a>
       </p>
     </div>
@@ -123,7 +123,7 @@ To implement this project in real life, you’ll need the following hardware com
           <img src="media/gmail.png" alt="Gmail" width="50" style="margin-right: 10px;" />
         </a>
         <a href="https://github.com/Bhakti-A" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
+          <img src="media/github_icon.webp" alt="GitHub" width="50" />
         </a>
       </p>
     </div>
