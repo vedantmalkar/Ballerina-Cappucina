@@ -91,13 +91,13 @@ To implement this project in real life, you’ll need the following hardware com
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%;">
     <video width="100%" controls>
-      <source src="media/Ballerina_test_movement.webm" type="video/mp4">
+      <source src="media/Ballerina_test_movement.webm" type="video/webm">
       Your browser does not support the video tag.
     </video>
   </div>
   <div style="width: 48%;">
     <video width="100%" controls>
-      <source src="media/Ball_Trapping.webm" type="video/mp4">
+      <source src="media/Ball_Trapping.webm" type="video/webm">
       Your browser does not support the video tag.
     </video>
   </div>
