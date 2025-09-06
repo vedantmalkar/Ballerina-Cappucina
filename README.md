@@ -57,7 +57,7 @@ To implement this project in real life, you’ll need the following hardware com
 - Vedant Malkar
 - Bhakti Assar
 
-## Contact Us
+## Contact us:
 
 <p align="center">
   <div style="display: flex; justify-content: space-around; width: 100%; text-align: center;">
