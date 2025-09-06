@@ -33,6 +33,6 @@ ros2 run ball_tracker move_bot
 
 
 <p align="center">
-  <img src="media/simulation_gazebo.png" width="300" />
+  <img src="simulation_gazebo.png" width="300" />
 </p>
 
