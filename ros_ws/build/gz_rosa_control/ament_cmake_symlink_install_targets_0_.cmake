@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/vedant/ros_ws/build/gz_rosa_control/libgazebo_ros_omni_drive.so" "TARGETS" "gazebo_ros_omni_drive" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
