@@ -1,4 +1,0 @@
-Invoking command in '/home/vedant/ros_ws/build/gz_rosa_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/ros_ws/install/ball_tracker:/opt/ros/humble /usr/bin/cmake --build /home/vedant/ros_ws/build/gz_rosa_control -- -j12 -l12
-Invoked command in '/home/vedant/ros_ws/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/ros_ws/install/ball_tracker:/opt/ros/humble /usr/bin/cmake --build /home/vedant/ros_ws/build/gz_rosa_control -- -j12 -l12
-Invoking command in '/home/vedant/ros_ws/build/gz_rosa_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/ros_ws/install/ball_tracker:/opt/ros/humble /usr/bin/cmake --install /home/vedant/ros_ws/build/gz_rosa_control
-Invoked command in '/home/vedant/ros_ws/build/gz_rosa_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/ros_ws/install/ball_tracker:/opt/ros/humble /usr/bin/cmake --install /home/vedant/ros_ws/build/gz_rosa_control
