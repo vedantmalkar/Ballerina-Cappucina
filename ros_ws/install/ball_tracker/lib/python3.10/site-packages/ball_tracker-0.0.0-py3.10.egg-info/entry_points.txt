@@ -1,4 +1,0 @@
-[console_scripts]
-detect_ball = ball_tracker.detect_ball:main
-move_bot = ball_tracker.move_bot:main
-

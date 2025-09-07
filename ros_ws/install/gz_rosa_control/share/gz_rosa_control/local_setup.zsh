@@ -1,1 +1,0 @@
-/home/vedant/ros_ws/build/gz_rosa_control/ament_cmake_environment_hooks/local_setup.zsh
