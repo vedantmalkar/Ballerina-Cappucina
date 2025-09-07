@@ -49,10 +49,6 @@ To implement this project in real life, you’ll need the following hardware com
 
 - [MG995 Servo Motor](https://www.amazon.in/Robodo-Electronics-MG995-TowerPro-Servo/dp/B00MTH0RMI?source=ps-sl-shoppingads-lpcontext&psc=1&smid=AJ6SIZC8YQDZX) (For ball trapping mechanism)
 
-<p align="center">
-  <img src="media/Ballerina_front_view.jpeg" width="300" />
-</p>
-
 <img width="642" height="607" alt="topview" src="https://github.com/user-attachments/assets/4737a914-3214-4f21-a4ef-bb7ed9ccc2ce" />
 
 [Ballerina Test Movement](media/Ballerina_test_movement.webm)
