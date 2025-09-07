@@ -15,7 +15,7 @@ Ballerina Cappucina, a graceful omnidirectional robot with a critical mission. T
 A custom omnidirectional mobile base is created that allows for fluid movement, and a vision system using OpenCV for color detection. Integrating these systems we enable Ballerina Cappucina to autonomously seek, collect, and sort the objects, clearing the stage.
 
 
-https://github.com/user-attachments/assets/d11e4158-a67d-415c-a705-5468be2ee85e
+https://github.com/user-attachments/assets/bf337eea-feaa-4688-a723-102494bc5cdb
 
 
 ## Core Idea:
@@ -53,8 +53,7 @@ To implement this project in real life, you’ll need the following hardware com
   <img src="media/Ballerina_front_view.jpeg" width="300" />
 </p>
 
-<img width="642" height="607" alt="Screenshot from 2025-09-07 13-43-28" src="https://github.com/user-attachments/assets/dce08fd7-7e14-44fe-a938-4a666dc07ae2" />
-
+<img width="642" height="607" alt="topview" src="https://github.com/user-attachments/assets/4737a914-3214-4f21-a4ef-bb7ed9ccc2ce" />
 
 [Ballerina Test Movement](media/Ballerina_test_movement.webm)
 	
