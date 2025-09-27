@@ -27,7 +27,7 @@ Underneath the robot, there’s a unique cavity mechanism, resembling a revolvin
 This folder contains the source files and configuration necessary to run the robot simulation in ROS. It includes the core scripts for controlling the robot’s movement, as well as pre-configured launch files. Additionally, you’ll find detailed instructions on how to set up and run the simulation in a ROS environment.
 ROS files of Jetson are in jetson branch.
 
-## [esp_code](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/esp_code)
+## [firmware](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/firmware)
 In this folder, you will find the source code for the ESP32 as well as detailed instructions on how to flash the code onto the device.
 
 ---
@@ -53,15 +53,9 @@ To implement this project in real life, you’ll need the following hardware com
 
 [Ballerina Test Movement](media/Ballerina_test_movement.webm)
 	
-## Mentors:
-- Prajwal Avhad
-- Soham Kute
-- Harsh Sagare
+## Acknowledgments
 
-## Mentees:
-- Lakshya Lalwani
-- Vedant Malkar
-- Bhakti Assar
+This project was completed under the Society of Robotics and Automation (SRA), VJTI. Special thanks to the SRA for their continuous support, guidance, and encouragement throughout the development process.
 
 ## Contact us:
 
