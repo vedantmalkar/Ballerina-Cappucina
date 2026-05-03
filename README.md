@@ -23,12 +23,55 @@ The robot begins by rotating in place, scanning the surroundings until it detect
 
 Underneath the robot, there’s a unique cavity mechanism, resembling a revolving door. As the robot moves over the ball, this mechanism traps the ball inside by closing a flapping door-like structure. After the ball is secured inside, the robot resumes its search, rotating again to find another ball, and the process repeats itself.
 
-## [ros_ws](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/ros_ws)
-This folder contains the source files and configuration necessary to run the robot simulation in ROS. It includes the core scripts for controlling the robot’s movement, as well as pre-configured launch files. Additionally, you’ll find detailed instructions on how to set up and run the simulation in a ROS environment.
-ROS files of Jetson are in jetson branch.
+## [ball_tracker](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/ball_tracker)
+ROS 2 package for vision-based ball tracking. Contains the colour-detection node, image-processing pipeline, motion controller, and launch files. ROS files for the Jetson live on the `jetson` branch.
 
 ## [firmware](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/firmware)
-In this folder, you will find the source code for the ESP32 as well as detailed instructions on how to flash the code onto the device.
+ESP32 source code and flashing instructions for low-level motor and servo control.
+
+## [parts](https://github.com/vedantmalkar/Ballerina-Cappucina/tree/main/parts)
+Mechanical CAD (`.step`) files for the chassis, ball-trapping rotator, motor mounts, and base.
+
+---
+
+## Setup Instructions
+
+Clone this repository into the `src/` folder of your ROS 2 workspace:
+
+```bash
+cd ~/ros2_ws/src/
+git clone https://github.com/vedantmalkar/Ballerina-Cappucina.git
+```
+
+Build the package:
+
+```bash
+cd ~/ros2_ws/
+colcon build --packages-select ball_tracker
+```
+
+Source the workspace:
+
+```bash
+source install/setup.bash
+```
+
+Launch the image-processing node (choose colour: `blue`, `yellow`, or `green`):
+
+```bash
+ros2 launch ball_tracker detect_ball_launch.py color:=yellow
+```
+
+In a new terminal, source the workspace again and start the bot movement node:
+
+```bash
+source ~/ros2_ws/install/setup.bash
+ros2 run ball_tracker move_bot
+```
+
+<p align="center">
+  <img src="media/simulation_gazebo.png" width="400" alt="Gazebo simulation" />
+</p>
 
 ---
 ## Hardware:
